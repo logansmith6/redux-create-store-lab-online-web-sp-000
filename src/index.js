@@ -35,8 +35,18 @@ function render() {
     throw new Error("the store's state has not been defined yet")
   }
 };
+<<<<<<< HEAD
 let store = createStore(candyReducer);
+=======
+let store = createStore(reducer);
+>>>>>>> b76432242a404654b0e494763ec2cf79e74b11f3
 store.dispatch({ type: '@@INIT' });
 
 // use your createStore function and the functions provided here to create a store
 // once the store is created, call an initial dispatch
+<<<<<<< HEAD
+=======
+button.addEventListener('click', function() {
+    store.dispatch({ type: 'INCREASE_COUNT' });
+})
+>>>>>>> b76432242a404654b0e494763ec2cf79e74b11f3
